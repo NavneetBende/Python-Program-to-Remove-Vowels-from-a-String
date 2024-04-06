@@ -1,0 +1,19 @@
+#take user input
+String = "PrepInsta"
+
+#initialize new empty string
+result = str()
+String = String.lower()
+
+for i in String:
+    #check condition if alphabet belong to group of vowels
+    if i == 'a' or i == 'e' or i == 'i' or i == 'o' or i == 'u':
+        pass
+    else:
+        result = result + i
+
+#check for if the result is not null
+if len(result) == 0:
+    print('No vowel found in ' + String)
+else:
+    print('After removing vowels : ' + result)
