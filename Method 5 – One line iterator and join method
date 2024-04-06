@@ -1,0 +1,14 @@
+def remove_vowel(string):
+    vowels = ['a','e','i','o','u']
+    
+    # result will become : ['P', 'r', 'p', 'n', 's', 't'] after below step
+    result = [letter for letter in string if letter.lower() not in vowels]
+    
+    # result will become Prpnst, i.e. we joined strings in this
+    result = ''.join(result)
+    print(result)
+ 
+# Driver program
+string = "PrepInsta"
+print(string)
+remove_vowel(string)
