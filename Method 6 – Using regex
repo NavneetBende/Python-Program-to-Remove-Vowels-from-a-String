@@ -1,0 +1,8 @@
+# import the module for regular expression (re)
+import re
+def rem_vowel(string):
+    return (re.sub("[aeiouAEIOU]","",string))           
+
+# Driver program
+string = "Prepinsta"
+print(rem_vowel(string))
